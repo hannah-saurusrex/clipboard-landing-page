@@ -121,7 +121,15 @@ header {
 
 .details--tips {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
 }
+
+/* .content-text-tips {
+    width: 75%;
+} */
+
 
 .companies {
     display: flex;
@@ -130,11 +138,43 @@ header {
 }
 
 footer {
-    background-color: rgb(226, 226, 226);
+    background-color: #eeeeee;
+    padding: 20px;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer--logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.footer--about {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.footer--about li {
+    padding: 0 10px;
+    color: var(--grayishBlue);
+}
+
+.footer--about li:hover {
+    color: var(--cyan);
+}
+
+.footer--social a:hover {
+    fill: var(--cyan);
 }
 
 .social--icon {
     cursor: pointer;
+    padding: 0 8px;
 }
 
 /* footer styles
