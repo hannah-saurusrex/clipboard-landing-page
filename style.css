@@ -76,6 +76,7 @@ header {
     cursor: pointer;
     outline: none;
     border: none;
+    transition: opacity 0.2s ease;
 }
 
 .btn:hover {
