@@ -40,10 +40,26 @@ header {
     margin-top: 3rem;
 }
 
+.content-headline {
+    color: var(--darkGrayishBlue);
+}
+
+.content-subhead {
+    color: var(--darkGrayishBlue);
+    font-size: 16px;
+}
+
 .content-text {
     font-size: 1rem;
     color: var(--grayishBlue);
     margin: 30px;
+    line-height: 1.5rem;
+}
+
+.content-text-aside {
+    color: var(--grayishBlue);
+    font-size: 14px;
+    line-height: 1.5rem;
 }
 
 .btn-container {
@@ -63,19 +79,63 @@ header {
 }
 
 .btn:hover {
-    opacity: 0.8;
+    opacity: 0.75;
 }
 
 .btn-green {
     background-color: var(--cyan);
-    box-shadow: 0px 4px 4px hsl(171, 31%, 61%);
+    box-shadow: 0px 6px 15px hsl(172, 40%, 72%);
 }
 
 .btn-blue {
     background-color: var(--blue);
-    box-shadow: 0px 4px 4px hsl(233, 100%, 86%);
+    box-shadow: 0px 6px 15px hsl(233, 100%, 86%);
 }
 
+.section {
+    margin: 8rem 0 4rem 0;
+}
+
+.section--aside {
+    display: flex;
+    padding: 3rem 0;
+}
+
+.tips {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 6rem 8rem;
+    justify-content: flex-end;
+    text-align: left;
+}
+
+.details {
+    padding-bottom: 4rem;
+}
+
+.image {
+    justify-content: center;
+    align-items: center;
+}
+
+.details--tips {
+    display: flex;
+}
+
+.companies {
+    display: flex;
+    margin: 8rem 0;
+    justify-content: space-evenly;
+}
+
+footer {
+    background-color: rgb(226, 226, 226);
+}
+
+.social--icon {
+    cursor: pointer;
+}
 
 /* footer styles
 .attribution { 
