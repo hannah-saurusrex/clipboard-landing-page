@@ -163,14 +163,11 @@ footer {
 .footer--about li {
     padding: 0 10px;
     color: var(--grayishBlue);
+    cursor: pointer;
 }
 
 .footer--about li:hover {
     color: var(--cyan);
-}
-
-.footer--social a:hover {
-    fill: var(--cyan);
 }
 
 .social--icon {
