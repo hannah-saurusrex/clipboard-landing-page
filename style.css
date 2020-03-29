@@ -131,11 +131,6 @@ header {
     padding: 3rem 0;
 }
 
-/* .content-text-tips {
-    width: 75%;
-} */
-
-
 .companies {
     display: flex;
     margin: 8rem 0;
@@ -160,12 +155,13 @@ footer {
 
 .footer--about {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     list-style-type: none;
+    padding: 0;
 }
 
 .footer--about li {
-    padding: 0 10px;
+    padding: 10px 0;
     color: var(--grayishBlue);
     cursor: pointer;
 }
