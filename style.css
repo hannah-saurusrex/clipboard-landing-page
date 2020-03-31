@@ -15,17 +15,22 @@
 
 body {
     font-family: 'Bai Jamjuree', sans-serif;
-    margin: 0 auto;
+    margin: 0;
     font-size: 18px;
     text-align: center;
     color: var(--darkGrayishBlue);
+}
+
+p {
+    color: var(--grayishBlue);
+    line-height: 1.5;
 }
 
 header {
     background-image: url('./images/bg-header-desktop.png');
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 80px 0;
+    padding: 80px 0 20px;
 }
 
 img {
@@ -33,36 +38,56 @@ img {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 30px auto;
     max-width: 100%;
     width: 1200px;
+    padding: 0 20px;
 }
 
 .container-small {
-    width: 700px;
+    width: 600px;
+}
+
+section {
+    padding: 30px 0;
+}
+
+.m4 {
+    margin: 100px auto;
 }
 
 .flex {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .flex > * {
     flex: 1;
+    padding: 30px;
 }
 
-.btn-container {
-    margin: 20px 0 60px 0;
+.container-aside {
+    margin: 120px 0;
+}
+
+.aside-image {
+    transform: scale(1.4) translateX(-15%);
+}
+
+.aside-text {
+    text-align: left;
 }
 
 .btn {
+    font-family: 'Bai Jamjuree', sans-serif;
+    border-radius: 50px;
     color: #fff;
     padding: 12px 26px;
-    border-radius: 50px;
-    margin: 10px 5px;
-    font-family: 'Bai Jamjuree', sans-serif;
+    margin: 15px 5px;
     font-size: 0.875rem;
+    font-weight: 600;
     cursor: pointer;
     outline: none;
     border: none;
@@ -81,6 +106,79 @@ img {
 .btn-blue {
     background-color: var(--blue);
     box-shadow: 0px 6px 15px hsl(233, 100%, 86%);
+}
+
+footer {
+    background-color: hsl(0, 0%, 93%);
+}
+
+footer .container {
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+footer img {
+    width: 60px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer ul a {
+    color: var(--darkGrayishBlue);
+    text-decoration: none;
+}
+
+footer .links {
+    flex: 3;
+}
+
+footer .links li {
+    padding: 10px;
+    margin-right: 40px;
+}
+
+footer .social li {
+    margin: 0 5px;
+}
+
+footer .social a {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+footer ul li a:hover {
+    color: var(--cyan);
+}
+
+@media screen and (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    .container-aside {
+        margin: 0;
+    }
+    
+    .aside-image {
+        transform: scale(1) translateX(0);
+    }
+
+    .aside-text {
+        text-align: center;
+    }
+
+    footer .links {
+        flex-direction: column;
+    }
+
+    footer .links li {
+        margin-right: 0;
+    }
 }
 
 
